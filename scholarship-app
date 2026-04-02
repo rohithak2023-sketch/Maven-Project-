@@ -1,1 +1,33 @@
+import java.util.Scanner;
 
+public class App{
+
+     public static void 
+CheckEligibility(double marks ,double income, String category){
+  if(marks >=75 && income<=300000) {
+    if (category.equalIgnoreCase("SC") ||
+       (category.equalIgnoreCase("ST") ||
+       (category.equalIgnoreCase("OBC") || {
+        System.out.println("Eligible for Full Scholarship");
+  }else{
+     System.out.println("Eligible for Partial Scholarship");
+  }else{
+     System.out.println("Not Eligible for Scholarship");
+  }
+}
+  public static void main(String[] args)
+  {
+    Scanner sc = new
+    Scanner(System.in)
+      System.out.print("Enter the marks: ");
+    double marks = sc.nextDouble();
+      System.out.print("Enter the Family Income: ");
+    double income =sc.nextDouble():
+
+      sc.nextline();
+    System.out.print("Enter the Category (SC/ST/OBC/GENERAL): ")
+      String category = sc.nextline();
+
+    checkEligibility(marks, income,category);
+  }
+} 
